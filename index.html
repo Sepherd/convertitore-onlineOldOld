@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Convertitore Online</title>
+</head>
+
+<body>
+    <!--
+    <header>
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <h1>CONVERTITORE</h1>
+        </div>
+
+    </header>
+    -->
+
+    <div class="container-md">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div class="card text-center">
+                    <h1>CONVERTITORE ONLINE</h1>
+                    <h2>Converti lunghezza, massa e temperatura</h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <select class="form-select" aria-label="type" id="type">
+                        <option value="0">Seleziona cosa convertire</option>
+                        <option value="1">Lunghezza</option>
+                        <option value="2">Massa</option>
+                        <option value="3">Temperatura</option>
+                    </select>
+                    <select class="form-select select userSelect" aria-label="converted" id="toConvert" disabled>
+                        
+                    </select>
+                    <select class="form-select select userSelect" aria-label="converted" id="converted" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="mb-3">
+                        <!--<label for="valUser" class="form-label">Inserisci valore:</label>-->
+                        <input type="text" class="form-control form-control-lg" id="valUser" placeholder="Inserisci valore" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <!--<label for="valConv" class="form-label">Valore convertito:</label>-->
+                        <input type="text" class="form-control form-control-lg" id="valConv" placeholder="Valore convertito" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" id="b-btn">
+                    <button type="button" class="btn" id="btn" disabled>Converti</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" id="b-storico">
+                    <h3>STORICO</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6" id="storico" data-simplebar>
+
+                            </div>
+                            <div class="col-6" id="btt-storico">
+                                <button type="button" class="btn btn-D" id="copy" data-clipboard-target=".simplebar-content" disabled>Copia</button>
+                                <button type="button" class="btn btn-D" id="reset" disabled>Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
