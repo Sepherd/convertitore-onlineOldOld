@@ -9,12 +9,6 @@ body {
     overflow-y: scroll;
 }
 
-
-/*.container-fluid {
-    background-color: #090979;
-    height: 80px;
-}*/
-
 .container-md {
     max-width: 720px;
     min-width: 300px;
@@ -35,10 +29,6 @@ h2 {
 h3 {
     font-size: 1em;
     margin: 8px 0;
-}
-
-.body-form {
-    margin-top: 40px;
 }
 
 .form-label label {
@@ -102,7 +92,7 @@ span {
 }
 
 .card {
-    margin: 20px auto 10px auto;
+    margin: 8px auto 10px auto;
     border-radius: 20px;
     padding: 10px 0;
 }
